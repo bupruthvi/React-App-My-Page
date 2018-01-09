@@ -1,0 +1,21 @@
+.thumbnail {
+  border-radius: 20px;
+  border: solid green;
+  transition-duration: 0.4s;
+
+}
+
+.thumbnail>img {
+  border-radius: 15px;
+  height: 240px;
+  width: auto;
+
+}
+.thumbContainer {
+  padding-top: 70px;
+}
+
+.thumbnail:hover {
+  border-color: #4286f4;
+
+}

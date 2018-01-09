@@ -1,0 +1,12 @@
+.moreInfo {
+  font-family: "PT Serif", serif;
+  text-align: center;
+  width: 70%;
+  padding: 150px 0 0 500px;
+}
+
+.moreInfo a {
+  font-style: italic;
+  target-name:new;
+  target-new:tab;
+}

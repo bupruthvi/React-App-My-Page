@@ -1,0 +1,61 @@
+.navbar-brand Link{
+  color: #ffffff;
+
+}
+
+
+
+.navbar-form{
+  margin-left: 50px;
+  padding-left: 300px;
+
+}
+
+::-webkit-input-placeholder {
+   text-align: left;
+
+}
+
+.place {
+  width: 100%;
+  padding-right: 70px;
+}
+
+
+.Orderbutton {
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.searchButton{ /*Search button*/
+  border: none;
+  background-color: #4CAF50;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.Orderbutton:hover { /*order hover property*/
+  background-color: #93d602;
+
+
+}
+
+.searchButton:hover{ /*Search button hover property*/
+  background-color: #93d602;
+
+}
+
+.search{ /*Search bar adjustment*/
+  margin-top: 2px;
+}

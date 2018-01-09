@@ -1,0 +1,11 @@
+.Home .HomeDetails {
+  text-align: center;
+  font-family: "PT Serif", serif;
+
+  padding: 150px;
+}
+
+.HomeDetails p {
+  color: #3793B3;
+
+}
