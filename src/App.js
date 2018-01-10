@@ -34,12 +34,14 @@ class App extends Component {
           </div>
           <div >
           <Nav className="Navtabs" pullRight>
+
             <NavItem href="/">Home</NavItem>
             <NavItem href="/Services">Services</NavItem>
             <NavDropdown title="Portfolio" id="basic-nav-dropdown">
               <MenuItem href="/Landscape">Landscape</MenuItem>
               <MenuItem href="/Travel">Travel</MenuItem>
               <MenuItem href="/Product">Product</MenuItem>
+              <MenuItem divider />
               <MenuItem href="/More">More</MenuItem>
             </NavDropdown>
             <NavItem href="/About">About</NavItem>
@@ -50,7 +52,6 @@ class App extends Component {
           </div>
         </Navbar>
 
-      <Routes/>
       </div>
 
     );

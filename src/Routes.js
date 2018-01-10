@@ -9,6 +9,7 @@ import Travel from './containers/Travel';
 import Product from './containers/Product';
 import More from './containers/More';
 import Services from './containers/Services';
+import Slider from './containers/Sliders/Slider';
 
 export default() =>
 <Switch>
@@ -20,4 +21,5 @@ export default() =>
   <Route path="/Travel" exact component={Travel}/>
   <Route path="/Product" exact component={Product}/>
   <Route path="/More" component={More}/>
+  <Route path="/Slider" exact component={Slider}/>
 </Switch>;

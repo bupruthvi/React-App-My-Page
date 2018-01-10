@@ -1,40 +1,35 @@
 import React, {Component} from 'react';
-import SliderOne from './SliderOne.js';
-import SliderTwo from './SliderTwo.js';
-import SliderThree from './SliderThree.js';
-import RightArrow from './RightArrow';
-import LeftArrow from './LeftArrow';
+import {Carousel, img} from 'react-bootstrap';
 
-export default class Slider extends Component{
-  constructor(props){
-    super(props);
-
-    this.state = {
-      slideCount: 1
-    }
-
-    this.nextSlide = this.nextSlide.bind(this);
-    this.previousSlide = this.previousSLide.bind(this);
-  }
+export default class Slideshow extends Component{
   render(){
-    return(
+    return (
+      <div className="ImageSlider">
+        <Carousel className="carousel">
+          <Carousel.Item>
+          <image width={900} height={500} alt="900x500" src="src/containers/Pictures/Pic26.JPG" />
 
-      <div className="slider">
-      {this.state.slideCount === 1 ? <SliderOne /> : null}
-      {this.state.slideCount === 2 ? <SliderTwo /> : null}
-      {this.state.slideCount === 3 ? <SliderThree /> : null}
-
-      <RightArrow nextSlide={this.nextSlide}/>
-      <LeftArrow previousSlide={this.previousSlide}/>
+            <Carousel.Caption>
+              <h3>First</h3>
+              <p>This is awesome!</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width={900} height={500} alt="900x500" src="src/containers/Pictures/Pic27.JPG" />
+            <Carousel.Caption>
+              <h3>First</h3>
+              <p>This is awesome!</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width={900} height={500} alt="900x500" src="src/containers/Pictures/Pic28.JPG" />
+            <Carousel.Caption>
+              <h3>First</h3>
+              <p>This is awesome!</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </div>
     );
-  }
-
-  nextSlide(){
-    this.setState({slideCount: this.state.slideCount + 1})
-  }
-
-  previousSlide(){
-    this.setState({slideCount: this.state.slideCount - 1})
   }
 }
