@@ -3,14 +3,22 @@
   border: solid green;
   transition-duration: 0.01s;
 
+
 }
 
-.thumbnail>img {
+
+.thumbnails {
   border-radius: 15px;
   height: 240px;
-  width: auto;
-
+  width: 100%;
 }
+
+.thumbnails>img {
+  border-radius: 15px;
+  height: 240px;
+  width: 100%;
+}
+
 .thumbContainer {
   padding-top: 70px;
 }

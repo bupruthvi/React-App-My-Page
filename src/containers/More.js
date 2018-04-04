@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
+import {Modal} from 'react-bootstrap';
 import './More.css';
 
 export default class More extends Component{
   render(){
     return(
       <div className="moreInfo">
+
         <p>For more information, please visit 'About' in our page.
         This page is still under development and we are really sorry for the inconvinence caused.
         Please visit our facebook page as well.<br/>

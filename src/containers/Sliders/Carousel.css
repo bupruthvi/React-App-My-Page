@@ -1,0 +1,26 @@
+.carousel-container{
+  max-width: 1200px;
+  padding-left: 100px;
+  padding-top: 20px;
+
+
+
+}
+
+.carousel {
+  max-width: 1200px;
+  max-height: 500px;
+  transition: 0.6s;
+  position: sticky;
+}
+
+.carousel p{
+  color: #ffffff;
+}
+
+.firstImage, .secondImage, .thirdImage, .fourthImage, .fifthImage,
+.sixthImage, .seventhImage, .eighthImage {
+  height: 500px;
+  width: 100%;
+  position: fixed;
+}

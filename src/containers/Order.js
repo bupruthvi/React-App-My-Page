@@ -1,18 +1,24 @@
 import React, {Component} from 'react';
-import {Button, FormGroup, FormControl, ControlLabel} from 'react-bootstrap';
+import {Button, FormGroup, FormControl, ControlLabel, Modal} from 'react-bootstrap';
 import './Order.css';
 
 export default class Order extends Component{
   constructor(props){
     super(props);
 
+
+
     this.state = {
       email: "",
-      Phone: ""
+      phone: "",
+      description:"describe your needs.",
+      open: false
     };
-
-
   }
+
+ buttonPressed(){
+   alert("successful");
+ }
 
   validateForm(){
     return this.state.email.length>0 && this.state.phone.length>0;
@@ -28,6 +34,10 @@ export default class Order extends Component{
   handleSubmit=event =>{
     event.preventDefault();
   }
+
+  handleRequestButton(){
+    <Modal/>
+  }
   render(){
     return(
       <div className="Order">
@@ -38,7 +48,7 @@ export default class Order extends Component{
               autoFocus
               type="email"
               placeholder="ex: brocko@mail.com"
-              //value={this.state.email}
+              value={this.props.email}
               onChange={this.handleChange}
 
             />
@@ -51,17 +61,29 @@ export default class Order extends Component{
               pattern="^[0-9]"
               placeholder="ex: 999-999-9999"
               onChange={this.handleChange}
-              value={this.state.phone}
+              value={this.props.phone}
             />
           </FormGroup>
-          <Button
+          <FormGroup className="description" bsSize="large">
+          <ControlLabel>Describe the event:</ControlLabel>
+          <FormControl
+          rows="3"
+          value={this.props.description}
+          placeholder={this.state.description}
+          />
+          </FormGroup>
+
+          <Button className="orderButton"
             block
             bsSize="large"
-            //disabled={!this.validateForm()}
+            disabled={this.validateForm()}
             type="submit"
+            onClick={this.buttonPressed}
+            
           >
-          Order
+          Request
           </Button>
+          
         </form>
 
       </div>

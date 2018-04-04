@@ -1,4 +1,4 @@
-@media all and (min-width:48px) {
+@media all and (min-width:480px) {
   .Order{
     padding: 150px;
   }
@@ -6,6 +6,15 @@
   .Order form{
     margin: 0 auto;
     max-width: 300px;
+  }
+
+  .orderButton{
+    background-color: #4CAF50; /* Green */
+    transition-duration: 0.4s;
+  }
+
+  .orderButton:hover{
+    background-color: #93d602;
   }
 
 }
